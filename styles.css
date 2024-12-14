@@ -1,0 +1,88 @@
+/* Genel Ayarlar */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+}
+
+/* Ana Konteyner */
+.container {
+    text-align: center;
+}
+
+/* Resim Konteyneri */
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.big-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Üstteki Metin */
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Butonlar */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 46px;
+    background-color: #f40606;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #000000;
+}
+
+/* Hareket Eden Buton */
+.moving-btn {
+    position: relative;
+
+}
+
+/* Üstteki Yazı */
+.center-text {
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+/* Video Konteyneri */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
