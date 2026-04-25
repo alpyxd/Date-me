@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: -apple-system, 'SF Pro Display', 'SF Pro Text', BlinkMacSystemFont, sans-serif;
+  overflow: hidden;
+}
+
+/* Ana ekran */
+#main-screen {
+  text-align: center;
+}
+
+#main-photo {
+  width: 880px;
+  max-width: 90vw;
+  height: auto;
+  margin-bottom: 1.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#question {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 2.5rem;
+  animation: fadeIn 1s ease;
+}
+
+#buttons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+button {
+  padding: 0.8rem 2.2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-family: -apple-system, 'SF Pro Display', 'SF Pro Text', BlinkMacSystemFont, sans-serif;
+}
+
+#yes-btn {
+  background: #28a745;
+  color: white;
+  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+}
+
+#yes-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(40, 167, 69, 0.5);
+}
+
+#no-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  position: static;
+}
+
+#no-btn:hover {
+  background: #c82333;
+}
+
+/* Evet ekranı */
+#yes-screen {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background: #000;
+}
+
+#response-video {
+  width: 100%;
+  max-width: 900px;
+  max-height: 78vh;
+  border-radius: 16px;
+  object-fit: contain;
+}
+
+#overlay-text {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  font-family: -apple-system, 'SF Pro Display', 'SF Pro Text', BlinkMacSystemFont, sans-serif;
+  animation: slideInLeft 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-80px); }
+  to   { opacity: 1; transform: translateX(0); }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Önemli Bir Soru 💕</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Ana ekran -->
+  <div id="main-screen">
+    <img id="main-photo" src="photo.jpg" alt="" />
+    <h1 id="question">Benimle çıkar mısın? 🥺</h1>
+    <div id="buttons">
+      <button id="yes-btn" onclick="onYes()">Evet 💖</button>
+      <button id="no-btn" onclick="onNo()">Hayır</button>
+    </div>
+  </div>
+
+  <!-- Evet ekranı -->
+  <div id="yes-screen" class="hidden">
+    <video id="response-video" autoplay loop playsinline>
+      <source src="video.mp4" type="video/mp4" />
+    </video>
+    <div id="overlay-text">Bunu seçeceğini biliyordum 🥰</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
